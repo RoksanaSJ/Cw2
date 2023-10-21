@@ -103,9 +103,9 @@ namespace Cw2
         }
 
         //na ktorym miejscu jest dana liczba w tablicy
-        // wywo lujemy funkcje, którą mamy, potem tworzę tabelkę --> przechodz e przez zablice i sprawdzamy, czy np. 8 = 8 --> bierzemy indeks i zmienamy. j nam zwiększa pustą tablicę
+        // wywo lujemy funkcje, którą mamy, potem tworzę tabelkę --> przechodze przez zablice i sprawdzamy, czy np. 8 = 8 --> bierzemy indeks i zmienamy. j nam zwiększa pustą tablicę
 
-        static int[] IndexesOfNumber(int number, int[] tab)
+       static int[] indexesOfNumber(int number, int[] tab)
         {
             int count = countNumberInTable(number, tab);
             int[] indexes = new int[count];
@@ -120,7 +120,7 @@ namespace Cw2
             }
 
             
-        }
+      }
 
       
         static void Main(string[] args)
@@ -128,8 +128,8 @@ namespace Cw2
         int[] tab = { 1, 5, 10, 22, 14 };
           Console.WriteLine(isEven(7));
           Console.WriteLine(isPrimary(5));
-           printTable(tab);
-            printTable(IndexesOfNumber(5, tab));
+         printTable(tab);
+         printTable(indexesOfNumber(5, tab));
         }
     }
 }
