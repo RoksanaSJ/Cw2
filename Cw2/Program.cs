@@ -118,6 +118,7 @@ namespace Cw2
                     j++;
                 }
             }
+            return indexes;
 
             
       }
